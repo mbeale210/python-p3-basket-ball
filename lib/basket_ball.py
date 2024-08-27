@@ -226,7 +226,7 @@ def average_rebounds_by_shoe_brand():
             brand = player['shoe_brand']
             if brand not in shoe_brands:
                 shoe_brands[brand] = {'total': 0, 'count': 0}
-            shoe_brands[brand]['total'] += player['rebounds_per_game']
+            shoe_brands[brand]['total'] += player['rebounds-per_game']
             shoe_brands[brand]['count'] += 1
 
     for brand, data in shoe_brands.items():
